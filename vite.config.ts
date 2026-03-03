@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Add this line below. It must match your repository name exactly.
-  base: "/algo-vision/",
+  base: mode === "production" ? "/algo-vision/" : "/",
   server: {
     host: "::",
     port: 8080,
