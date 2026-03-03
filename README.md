@@ -1,54 +1,40 @@
-# Welcome to your Lovable project
+# ALGO·VISION — Master Every Algorithm
 
-## Project info
+An interactive Full-Stack Data Structures and Algorithms (DSA) visualizer built to help students and developers master complex logic through step-by-step animations and persistent progress tracking.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🛠️ Technical Ecosystem
+* **Frontend:** React 18, Vite, Tailwind CSS, and Lucide React for a responsive, high-performance UI.
+* **Backend:** Supabase (PostgreSQL) providing real-time data synchronization and secure user authentication.
+* **Infrastructure:** Configured with environment-specific build pipelines for both local development and production environments.
 
-## How can I edit this code?
 
-There are several ways of editing your application.
 
-**Use Lovable**
+## ✨ Core Features
+* **Dynamic Visualizations:** Detailed animations for 20+ algorithms, including Sorting (Merge, Quick, Bubble), Searching, and Graph traversals (Dijkstra's, BFS/DFS).
+* **User Progress Persistence:** Integrated "Mark as Completed" functionality that saves your learning journey directly to the database.
+* **Complexity Analysis:** Real-time display of Time Complexity ($O(n \log n)$) and Space Complexity ($O(n)$) for every algorithm.
+* **Secure Profiles:** Automatic profile generation for new users with protected data access.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🏗️ Engineering Highlights
+* **Row Level Security (RLS):** Implemented strict PostgreSQL policies ensuring that user progress data is isolated and accessible only by the account owner.
+* **State-Driven Animations:** Utilizes React state management to coordinate asynchronous animation frames with underlying algorithmic logic.
+* **Database Normalization:** Optimized schema design featuring an `algorithm_progress` table with foreign key relationships to the global auth schema.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🚀 Local Development Setup
+1.  **Clone the Repo:**
+    `git clone https://github.com/A-R0y/algo-vision.git`
+2.  **Install Dependencies:**
+    `npm install`
+3.  **Configure Environment:**
+    Create a `.env` file in the root directory and add your Supabase credentials:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
+4.  **Launch:**
+    `npm run dev` (Access via `http://localhost:8080`)
 
 ## What technologies are used for this project?
 
@@ -60,14 +46,6 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+**Note:** This project is currently optimized for local professional demonstration while the production deployment pipeline is being refined.
