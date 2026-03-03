@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/A-R0y/algo-vision",
+  "homepage": "https://a-r0y.github.io/algo-vision/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
